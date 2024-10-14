@@ -3,27 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de cartas</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+      crossorigin="anonymous"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div class="container">
+    <div class="medidas"> 
+      <input type="number" name="" id="height" placeholder="Height">
+      <input type="number" name="" id="width" placeholder="Width">
     </div>
+  
+    <div class="card">
+      <div> <h1 class="superior">  </h1> </div>
+      <img class="confetis" src="" alt="">
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>¿Tienes suerte hoy?</strong> 
+        <h1>Elige un palo y un numero.</h1>
+        <div class="selectores">
+        <select id="eligeUnPalo"  class="form-select" onclick="clicar()" aria-label="Default select example">
+          <option selected>Elige un palo:</option>
+          <option value="♦">♦</option>
+          <option value="♥">♥</option>
+          <option value="♠">♠</option>
+          <option value="♣">♣</option>
+        </select>
+        <select id="eligeUnNumero" class="form-select2" onclick="clicar()" aria-label="Default select example">
+          <option selected>Elige un numero:</option>
+          <option value="A">A</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="J">J</option>
+          <option value="K">K</option>
+          <option value="Q">Q</option>
+        </select>
+      </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <br>
+        <button type="button" class="guardar" data-bs-dismiss="alert">Buena suerte!</button>
+      </div>
+      <h1 class="numero">  </h1>
+      <div> <h1 class="inferior">  </h1></div>
+  </div>
+  <br>
+  <div class="reloj"> 
+    <h1 class="cronometro"> </h1>
+  </div>
+ <br>
+    <input class="CardGenerator" type="button" onclick="" value="GENERAR UNA CARTA">
+  </div>
   </body>
 </html>
